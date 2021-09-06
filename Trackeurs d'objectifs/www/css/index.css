@@ -1,0 +1,110 @@
+/*
+Tableau de bord
+Windows Cordova Application
+CSS File
+By Ulysse Valdenaire
+01/08/2021
+*/
+
+body{
+    margin:0;
+}
+
+/*Top of the page*/
+#top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Navigation menu*/
+nav {
+    width: 100%;
+    margin:auto;
+}
+
+nav > ul > li{
+    display:inline;
+}
+
+/*Boutons du menu*/
+li>button{
+    width:100px;
+    width:100px;
+    padding:10px;
+    border-radius:5px;
+}
+
+#mainButton{
+    margin:0px 20px 0px 20px;
+}
+
+/*Tableau des objectifs*/
+.titleSection{
+    text-align:center;
+}
+
+.topTitle{
+    text-align:center;
+}
+
+.center{
+    text-align:center;
+}
+
+/*Bouttons CRUD*/
+.center>button{
+    width:80px;
+    padding:5px;
+    border-radius:5px;
+}
+
+/*Boutons des stats*/
+#stats>button{
+    margin-left:50px;
+    margin-bottom:20px;
+}
+
+/*Containers with the objectifs*/
+#container {
+    display: flex;
+    justify-content: space-around;
+    height:100vh;
+}
+
+.title{
+    text-align:center;
+    height:80px;
+}
+
+#box1{
+    flex-grow:1;
+    border-right:2px solid black;   
+}
+
+#box2 {
+    flex-grow: 2;
+    border-right: 2px solid black; 
+}
+
+#box3{
+    flex-grow:1;
+}
+
+input{
+    margin-left:30px;
+}
+
+#divForm{
+    width:320px;
+    margin:auto;
+  
+}
+
+label, input{
+    margin:20px;
+}
+
+select{
+    margin:20px;
+}

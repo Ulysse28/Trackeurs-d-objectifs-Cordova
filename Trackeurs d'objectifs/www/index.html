@@ -1,0 +1,105 @@
+﻿<!--
+Tableau de bord
+Windows Cordova Application
+HTML File
+By Ulysse Valdenaire
+01/08/2021
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>TableaudeBord</title>
+    </head>
+    <body>
+        <!--Top of the page-->
+        <header>
+            <section id="top">
+                <p>10h10 | 01/08/2021</p>
+                <button id="seeObjectifs">Objectifs</button>
+                <h1>Tableau de bord</h1>
+                <p>Bonus</p>
+            </section>
+            <!--Navigation menu-->
+            <nav>
+                <ul>
+                    <li><button>IT</button></li>
+                    <li><button>Sport</button></li>
+                    <li><button>Lecture</button></li>
+                    <li><button>Ecriture</button></li>
+                    <li><button>Autres</button></li>
+                    <li><button id="mainButton">Général</button></li>
+                    <li><button>Today</button></li>
+                    <li><button>Demain</button></li>
+                    <li><button>Semaine</button></li>
+                    <li><button>Mois</button></li>
+                    <li><button>Année</button></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--Bouttons pour ajouter/modifier/supprimer des objectifs-->
+        <div class="center">
+            <button id="btnAdd">Ajouter</button>
+            <button id="btnModifier">Modifier</button>
+            <button>Supprimer</button>
+        </div>
+        <!--Titre de la section active-->
+            <h2 class="titleSection">Général</h2>
+        <hr />
+          <!--Tableau de bord avec les objectifs-->
+        <main id="container">
+            <!--Sous section pour consulter les statistiques-->
+            <section id="box1">
+                <div class="title">
+                    <p><strong>Consulter les stats</strong></p>
+                </div>
+                <!--Differents types de stats-->
+                <div id="stats">
+                    <button>De la semaine</button><br />
+                    <button>Du Mois</button><br />
+                    <button>Des 3 derniers mois</button><br />
+                    <button>Des 6 derniers mois</button><br />
+                    <button>De l'année</button><br />
+                    <button>En général</button><br />
+                    <button>En IT</button><br />
+                    <button>En sport</button><br />
+                    <button>En lecture</button><br />
+                    <button>En écriture</button><br />
+                    <button>Autres</button>
+                </div>
+            </section>
+            <!--Sous section objectifs du jour-->
+            <section id="box2">
+                <div class="title">
+                    <p>Objectifs du jour</p>
+                </div>
+                <div id="objectifs">
+                    <input type="checkbox" />
+                    <label>Coder--Informatique--today--difficulté 2--Prioritaire</label><br />
+                </div>
+            </section>
+            <!--Sous section objectifs du lendemain-->
+            <section id="box3">
+                <div class="title">
+                    <p>Objectifs lendemain</p>
+                </div>
+                <div>
+                    <input type="checkbox" />
+                    <label>Coder</label>
+                  
+                </div>
+            </section>
+        </main>
+        <!--Scripts javascript-->
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="scripts/platformOverrides.js"></script>
+        <script type="text/javascript" src="scripts/index.js"></script>
+    </body>
+</html>
